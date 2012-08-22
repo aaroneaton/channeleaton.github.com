@@ -4,7 +4,7 @@
   <title><![CDATA[Category: wordpress | channeleaton]]></title>
   <link href="http://channeleaton.com/blog/categories/wordpress/atom.xml" rel="self"/>
   <link href="http://channeleaton.com/"/>
-  <updated>2012-08-21T20:36:52-05:00</updated>
+  <updated>2012-08-21T20:40:51-05:00</updated>
   <id>http://channeleaton.com/</id>
   <author>
     <name><![CDATA[J. Aaron Eaton]]></name>
@@ -18,7 +18,7 @@
     <link href="http://channeleaton.com/blog/2012/08/21/so-long/"/>
     <updated>2012-08-21T17:58:00-05:00</updated>
     <id>http://channeleaton.com/blog/2012/08/21/so-long</id>
-    <content type="html"><![CDATA[<p>Starting today, my blog will be powered by <a href="http://octopress.org">Octopress</a>.</p>
+    <content type="html"><![CDATA[<p>Starting today, my blog will be powered by <a href="http://octopress.org">Octopress</a> and hosted (free) on <a href="http://pages.github.com/">Github Pages</a>.</p>
 
 <p>You may be wondering why a 'WordPress guy' wouldn't use WordPress as his blogging engine. I'll give you a couple of reasons.</p>
 
