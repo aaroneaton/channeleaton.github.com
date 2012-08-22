@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: php | My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/blog/categories/php/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[PHP in_array() only matches value in the first array position]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position/"/>
+    <updated>2012-02-29T21:39:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position</id>
+    <content type="html"><![CDATA[<p>While trying to create a tagging function for a new blog system I’m currently building, I kept running into trouble when using is_array() to find the tags for each post.</p>
+
+<p>Let’s say we have a tag array that was populated from a text file:</p>
+
+<p><code>
+$tags = array( 'a', 'b', 'c' );
+</code></p>
+
+<p>And now we want to check if a specific tag is in both arrays:</p>
+
+<p>``` php
+if ( in_array( 'a', $tags ) ) {</p>
+
+<p>  $response = 'Tag found';</p>
+
+<p>} else {</p>
+
+<p>  $response = 'Tag not found';</p>
+
+<p>}
+```</p>
+
+<p>As we expected, $response = ‘Tag found’. But if we search for ‘b’, $response = ‘Tag not found’ even though we can see very clearly that the value ‘b’ exists in the array $tags.</p>
+
+<p>What’s the solution?</p>
+
+<p>The key to the solution lies in the fact that the array $tags was populated from a text file. Text files can contain all sorts of hidden characters that in_array() can pick up when comparing parameters. The fix is simple. Before passing the $tags array to in_array(), trim up each of the array values like so:</p>
+
+<p><code>
+$tags = array_map( 'trim', $tags );
+</code></p>
+
+<p>This took me a good 3 hours to figure out. I hope you found this article in less time.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: kaboom | My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/blog/categories/kaboom/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Plaza Hotel Implosion]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/05/24/plaza-hotel-implosion/"/>
+    <updated>2012-05-24T21:35:00-05:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/05/24/plaza-hotel-implosion</id>
+    <content type="html"><![CDATA[<p>Here's two videos I made of this morning's implosion:</p>
+
+<div class="video-container">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/ChabZ-0CS3w" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<p>And now in slow-motion:</p>
+
+<div class="video-container">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/QUnun68pOTs" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<p>And no. I did not plan the synchronization.</p>
+]]></content>
+  </entry>
+  
+</feed>

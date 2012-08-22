@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: icons | My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/blog/categories/icons/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[New, beautiful icons from WebDesign Tuts+]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/11/new-icons/"/>
+    <updated>2011-12-11T23:48:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/11/new-icons</id>
+    <content type="html"><![CDATA[<p><img src="/assets/backlog/icons.png" title="Icons" ></p>
+
+<p>WebDesign Tuts+ has released a set of 50 icons to use in your own web designs. Get the files <a href="http://webdesign.tutsplus.com/freebies/icons-freebies/exclusive-freebie-50-crisp-web-app-icons/">here</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

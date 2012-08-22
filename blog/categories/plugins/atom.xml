@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: plugins | My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/blog/categories/plugins/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[New WordPress Plugin - WP Slider.js]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/02/06/new-wordpress-plugin/"/>
+    <updated>2012-02-06T23:35:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/02/06/new-wordpress-plugin</id>
+    <content type="html"><![CDATA[<p><img src="/assets/backlog/slider.png" title="WP Slider.js Screencap" ></p>
+
+<p>I just wanted to let you know about a plugin I’m currently working on. Yeah. It’s yet another feature/image slider but this one is based on the new, beautiful <a href="http://sliderjs.org/">Slider.js</a> by <a href="http://gaetanrenaudeau.fr/">Gaetan Renaudeau</a>.</p>
+
+<p>WP Slider.js will allow you to pull the featured images from any category and create a slider with one simple template tag. Read more about the plugin on the project page. I hope that you will enjoy this plugin as much as I have.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: themes | My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/blog/categories/themes/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Post-format fix for WordPress.com themes]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/"/>
+    <updated>2011-12-17T14:42:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes</id>
+    <content type="html"><![CDATA[<p>In testing out some of the <a href="/blog/2011/12/16/wordpress-dot-com-theme-repository/">WordPress.com themes</a>, I found that link and audio post formats would return a fatal error stating that certain functions did not exist. After a little searching and experimentation I have the solution for you. Just copy the following into the <code>functions.php</code> file:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/&lt;em> Add the missing functions &lt;/em>/
+</span><span class='line'>function wpcom_themes_url_grabber() {&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>global $post;
+</span><span class='line'>$first_url = '';
+</span><span class='line'>ob_start();
+</span><span class='line'>ob_end_clean();
+</span><span class='line'>$output = preg_match_all( '/&lt;a.+href=[\'"]([^\'"]+)[\'"].*&gt;/i', $post-&gt;post_content, $matches );
+</span><span class='line'>$first_url = $matches[1][0];
+</span><span class='line'>if ( empty( $first_url ) )
+</span><span class='line'>    return false;
+</span><span class='line'>return $first_url;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>function wpcom_themes_audio_grabber() {&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>global $wpdb, $post;
+</span><span class='line'>$audio = '';
+</span><span class='line'>$query = $wpdb-&gt;prepare( "SELECT guid FROM $wpdb-&gt;posts WHERE post_parent = %d AND post_type = 'attachment' AND post_mime_type = 'audio/mpeg' ORDER BY menu_order ASC LIMIT 1", $post-&gt;ID );
+</span><span class='line'>$first_audio = $wpdb-&gt;get_results( $query );
+</span><span class='line'>if ( $first_audio )
+</span><span class='line'>    return $first_audio[0]-&gt;guid;
+</span><span class='line'>return false;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WordPress.com Theme Repository]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/16/wordpress-dot-com-theme-repository/"/>
+    <updated>2011-12-16T14:56:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/16/wordpress-dot-com-theme-repository</id>
+    <content type="html"><![CDATA[<p><img src="/assets/backlog/theme.png"></p>
+
+<p>Lately I’ve been searching for some WordPress themes that incorporate the post-formats feature. I soon realized that there are not too many places to find these themes, but one place stood out and the answer will surprise you.</p>
+
+<p><a href="http://wordpress.com">WordPress.com</a> (no, not wordpress.ORG).</p>
+
+<p>Why?</p>
+
+<p>The Automattic team has done a wonderful job of taking freely-available themes and improving upon them.</p>
+
+<p>One big problem did arise. I couldn’t find any way to download the WordPress.com versions of these great themes.</p>
+
+<p>After searching far and wide I finally stumbled upon this great gem, the WordPress.com theme SVN repository. This repository contains every free theme available for the WordPress.com users with all of the great custom functions. How do you get these great themes on your own self-hosted WordPress installation? Take a look at this:</p>
+
+<ol>
+<li>Open the SSH client of your choice (Terminal for Mac, PuTTY for Windows)</li>
+<li>SSH into your web server
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh &lt;username>@&lt;domain></span></code></pre></td></tr></table></div></figure></notextile></div></li>
+<li>Navigate to your WordPress theme directory
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd wp-content/themes/</span></code></pre></td></tr></table></div></figure></notextile></div></li>
+<li>Type the following into your SSH client
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>svn co https://wpcom-themes.svn.automattic.com/</span></code></pre></td></tr></table></div></figure></notextile></div></li>
+</ol>
+
+
+<p>You now have over 150 quality themes at your disposal. Take a look!</p>
+
+<p><img src="/assets/backlog/theme2.png"></p>
+
+<hr />
+
+<h2>Update</h2>
+
+<p>Getting errors with your post-formats? Here's the <a href="/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/">solution</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

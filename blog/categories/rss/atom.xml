@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rss | My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/blog/categories/rss/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Best plugin to get RSS feeds into your WordPress loop]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop/"/>
+    <updated>2011-12-18T00:00:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop</id>
+    <content type="html"><![CDATA[<p><img src="/assets/backlog/feedwordpress.png" title="FeedWordPress" ></p>
+
+<p>Have you ever wanted to aggregate news feeds into your WordPress blog ? The <a href="http://feedwordpress.radgeek.com/">FeedWordPress plugin</a> makes it extremely easy for you.</p>
+
+<p>FeedWordPress allows you to bring in any RSS or Atom feed and display it however you choose. It could be used to build the next great news aggregator or  your lifestream. The plugin is actively developed and documentation is very well written.</p>
+
+<p>Take a moment to check out this great plugin.</p>
+]]></content>
+  </entry>
+  
+</feed>

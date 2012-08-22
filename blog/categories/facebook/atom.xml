@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: facebook | My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/blog/categories/facebook/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Enable Facebook comments on your WordPress blog]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog/"/>
+    <updated>2011-12-20T23:54:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog</id>
+    <content type="html"><![CDATA[<p>Wptuts+ has a great write-up on how to enable Facebook comments on your WordPress blog. I was pleasantly surprised to find how easy the process has become.</p>
+
+<p>I would make one improvement. Instead of hard-coding the <code>&lt;meta&gt;</code> tag to add your app id, I would insert the following into your <code>functions.php</code> file:</p>
+
+<p>```
+/<em> Add meta info required for Facebook comments </em>/
+add_action( 'wp_head', 'channeleaton_facebook_comments' );
+function channeleaton_facebook_comments() {
+?></p>
+
+<pre><code>&lt;meta property='fb:app_id' content='YOUR APP ID' /&gt;
+</code></pre>
+
+<p>&lt;?php
+}
+```</p>
+
+<p>That code should make it a bit easier for those of you using child themes.</p>
+]]></content>
+  </entry>
+  
+</feed>

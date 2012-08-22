@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[So long, WordPress!]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/08/21/so-long/"/>
+    <updated>2012-08-21T17:58:00-05:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/08/21/so-long</id>
+    <content type="html"><![CDATA[<p>Starting today, my blog will be powered by <a href="http://octopress.org">Octopress</a>.</p>
+
+<p>You may be wondering why a &#8216;WordPress guy&#8217; wouldn&#8217;t use WordPress as his blogging engine. I&#8217;ll give you a couple of reasons.</p>
+
+<h3>I wanted something simple</h3>
+
+<p>WordPress has grown a great deal since its inception. So much so that I believe it has outgrown itself as <em>just</em> a blogging engine. I found myself tinkering with it a great deal (which has been useful at times) without actually writing.</p>
+
+<h3>WordPress requires a decent host</h3>
+
+<p>If you use WordPress on a shared host, you better be on the best. Even then you may be constantly fighting slow load times. Your best option is to run your own VPS or pony up for a specialty host such as <a href="http://wpengine.com">WPEngine</a>. I do not feel like paying $30-$60 per month to host a personal blog.</p>
+
+<h3>I love Markdown</h3>
+
+<p>John Gruber.</p>
+
+<p>This man changed the way the internet writes content when he released <a href="http://daringfireball.net/projects/markdown/">Markdown</a>. I wanted to write my blog in Markdown because it is dead simple. There&#8217;s no GUI or html tags to get in the way of writing. Plugins are available to use Markdown in WordPress but all of them seemed a bit kludgey (sp?).</p>
+
+<h2>It&#8217;s not goodbye</h2>
+
+<p>Now, none of this means that I am abandoning WordPress. I love writing plugins and themes. And I will continue to write about WordPress, especially now that I am a full-time WordPress developer. I still believe WordPress is <strong>the</strong> CMS to use and will be for a long time to come.</p>
+
+<p>My WordPress site will continue to live at <a href="http://wplabs.channeleaton.com">wplabs.channeleaton.com</a>, although it is currently having some difficulties. I think it&#8217;s mad at me.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My renewed love for the ampersand]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/06/13/my-renewed-love-for-the-ampersand/"/>
+    <updated>2012-06-13T20:47:00-05:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/06/13/my-renewed-love-for-the-ampersand</id>
+    <content type="html"><![CDATA[<p>While retrofitting a Drupal theme here at work to use Less, we ran into some difficulty in applying same-level ids and classes when nesting rules. Here’s the original CSS. Both the primary-menu class and the index id are on the same element in the HTML:</p>
+
+<!-- more -->
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#primary-menu {
+</span><span class='line'>  color: #fff;
+</span><span class='line'>  float: left;
+</span><span class='line'>  width: 736px;
+</span><span class='line'>  height: 30px;
+</span><span class='line'>  margin: 0;
+</span><span class='line'>  background: @gray;
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>#primary-menu.index {
+</span><span class='line'>  background: @gray url(../../images/headerBG.png) left bottom repeat-x;
+</span><span class='line'>  padding: 2px 0 13px 0;
+</span><span class='line'>  height: 26px;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And here&#8217;s our first attempt at nesting the <code>.index</code> rule:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#primary-menu {
+</span><span class='line'>  color: #fff;
+</span><span class='line'>  float: left;
+</span><span class='line'>  width: 736px;
+</span><span class='line'>  height: 30px;
+</span><span class='line'>  margin: 0;
+</span><span class='line'>  background: @gray;
+</span><span class='line'>
+</span><span class='line'>  .index {
+</span><span class='line'>    background: @gray url(../../images/headerBG.png) left bottom repeat-x;
+</span><span class='line'>    padding: 2px 0 13px 0;
+</span><span class='line'>    height: 26px;
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Everything&#8217;s gravy, right?</p>
+
+<p>Wrong. Here&#8217;s the processed CSS:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#primary-menu .index {
+</span><span class='line'>  CSS Rules Here
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>See that space between the class and id? Yeah, that’s not going to work. At first I thought this was a limitation of nested rules in Less but then I remembered how pseudo-classes were applied to anchor tags:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>a {
+</span><span class='line'>  text-decoration: none;
+</span><span class='line'>  
+</span><span class='line'>  &:hover {
+</span><span class='line'>    text-decoration: underline;
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The ampersand (&amp;) in Less acts as a concatenation symbol, getting rid of any spaces between the parent and child selectors. Why not add that to our original issue?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#primary-menu {
+</span><span class='line'>  color:#fff;
+</span><span class='line'>  float:left;
+</span><span class='line'>  width:736px;
+</span><span class='line'>  height:30px;
+</span><span class='line'>  margin:0px 0 0 0;
+</span><span class='line'>  padding: 2px 0 0px 0px;
+</span><span class='line'>  background: @gray;
+</span><span class='line'>
+</span><span class='line'>  &.index {
+</span><span class='line'>    background: @gray url(../../images/headerBG.png) left bottom repeat-x;
+</span><span class='line'>    padding: 2px 0 13px 0px;
+</span><span class='line'>    height: 26px;
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>When processed, no space exists between the class and id and everyone is happy again.</p>
+
+<p>Go forth and don&#8217;t make the same mistake I did.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Plaza Hotel Implosion]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/05/24/plaza-hotel-implosion/"/>
+    <updated>2012-05-24T21:35:00-05:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/05/24/plaza-hotel-implosion</id>
+    <content type="html"><![CDATA[<p>Here&#8217;s two videos I made of this morning&#8217;s implosion:</p>
+
+<div class="video-container">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/ChabZ-0CS3w" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<p>And now in slow-motion:</p>
+
+<div class="video-container">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/QUnun68pOTs" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<p>And no. I did not plan the synchronization.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PHP in_array() only matches value in the first array position]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position/"/>
+    <updated>2012-02-29T21:39:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position</id>
+    <content type="html"><![CDATA[<p>While trying to create a tagging function for a new blog system I’m currently building, I kept running into trouble when using is_array() to find the tags for each post.</p>
+
+<p>Let’s say we have a tag array that was populated from a text file:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$tags = array( 'a', 'b', 'c' );</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now we want to check if a specific tag is in both arrays:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">if ( in_array( &#39;a&#39;, $tags ) ) {</span>
+</span><span class='line'><span class="x"> </span>
+</span><span class='line'><span class="x">  $response = &#39;Tag found&#39;;</span>
+</span><span class='line'><span class="x"> </span>
+</span><span class='line'><span class="x">} else {</span>
+</span><span class='line'><span class="x"> </span>
+</span><span class='line'><span class="x">  $response = &#39;Tag not found&#39;;</span>
+</span><span class='line'><span class="x"> </span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As we expected, $response = ‘Tag found’. But if we search for ‘b’, $response = ‘Tag not found’ even though we can see very clearly that the value ‘b’ exists in the array $tags.</p>
+
+<p>What’s the solution?</p>
+
+<p>The key to the solution lies in the fact that the array $tags was populated from a text file. Text files can contain all sorts of hidden characters that in_array() can pick up when comparing parameters. The fix is simple. Before passing the $tags array to in_array(), trim up each of the array values like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$tags = array_map( &#39;trim&#39;, $tags );</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This took me a good 3 hours to figure out. I hope you found this article in less time.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Oh great. I've gone full nerd]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/02/12/oh-great-ive-gone-full-nerd/"/>
+    <updated>2012-02-12T23:27:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/02/12/oh-great-ive-gone-full-nerd</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/terminal-nerd.png" title="Full Nerd" ></p>
+
+<p>You never go full nerd.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New WordPress Plugin - WP Slider.js]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/02/06/new-wordpress-plugin/"/>
+    <updated>2012-02-06T23:35:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/02/06/new-wordpress-plugin</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/slider.png" title="WP Slider.js Screencap" ></p>
+
+<p>I just wanted to let you know about a plugin I’m currently working on. Yeah. It’s yet another feature/image slider but this one is based on the new, beautiful <a href="http://sliderjs.org/">Slider.js</a> by <a href="http://gaetanrenaudeau.fr/">Gaetan Renaudeau</a>.</p>
+
+<p>WP Slider.js will allow you to pull the featured images from any category and create a slider with one simple template tag. Read more about the plugin on the project page. I hope that you will enjoy this plugin as much as I have.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Beautiful Day at the Dog Park]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/01/12/beautiful-day-at-the-dog-park/"/>
+    <updated>2012-01-12T23:43:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/01/12/beautiful-day-at-the-dog-park</id>
+    <content type="html"><![CDATA[<div id="video-container">
+<iframe src="http://player.vimeo.com/video/35616659" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/35616659">Beautiful Day at the Dog Park</a> from <a href="http://vimeo.com/kelseywynns">Kelsey Wynns</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+</div>
+
+
+<ol>
+<li>Buy a pair of GoPro HD cameras</li>
+<li>Strap to dog</li>
+<li>????????</li>
+<li>Profit!</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Enable Facebook comments on your WordPress blog]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog/"/>
+    <updated>2011-12-20T23:54:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog</id>
+    <content type="html"><![CDATA[<p>Wptuts+ has a great write-up on how to enable Facebook comments on your WordPress blog. I was pleasantly surprised to find how easy the process has become.</p>
+
+<p>I would make one improvement. Instead of hard-coding the <code>&lt;meta&gt;</code> tag to add your app id, I would insert the following into your <code>functions.php</code> file:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/* Add meta info required for Facebook comments */
+</span><span class='line'>add_action( 'wp_head', 'channeleaton_facebook_comments' );
+</span><span class='line'>function channeleaton_facebook_comments() {
+</span><span class='line'>?&gt;
+</span><span class='line'>    &lt;meta property='fb:app_id' content='YOUR APP ID' /&gt;
+</span><span class='line'>&lt;?php
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That code should make it a bit easier for those of you using child themes.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Car-free Weekend]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/18/car-free-weekend/"/>
+    <updated>2011-12-18T14:29:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/18/car-free-weekend</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/bike-ride.jpg"></p>
+
+<p>I&#8217;m having a great time riding my bike around town this weekend.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Best plugin to get RSS feeds into your WordPress loop]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop/"/>
+    <updated>2011-12-18T00:00:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/feedwordpress.png" title="FeedWordPress" ></p>
+
+<p>Have you ever wanted to aggregate news feeds into your WordPress blog ? The <a href="http://feedwordpress.radgeek.com/">FeedWordPress plugin</a> makes it extremely easy for you.</p>
+
+<p>FeedWordPress allows you to bring in any RSS or Atom feed and display it however you choose. It could be used to build the next great news aggregator or  your lifestream. The plugin is actively developed and documentation is very well written.</p>
+
+<p>Take a moment to check out this great plugin.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google Doodle Swag]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/17/google-doodle-swag/"/>
+    <updated>2011-12-17T14:50:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/17/google-doodle-swag</id>
+    <content type="html"><![CDATA[<p>Google has now made available all (?) of their famous doodles printed on <a href="http://www.zazzle.com/googledoodles">many different items</a>.</p>
+
+<p>Go nuts.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Post-format fix for WordPress.com themes]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/"/>
+    <updated>2011-12-17T14:42:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes</id>
+    <content type="html"><![CDATA[<p>In testing out some of the <a href="http://channeleaton.github.com/blog/2011/12/16/wordpress-dot-com-theme-repository/">WordPress.com themes</a>, I found that link and audio post formats would return a fatal error stating that certain functions did not exist. After a little searching and experimentation I have the solution for you. Just copy the following into the <code>functions.php</code> file:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/* Add the missing functions */
+</span><span class='line'>function wpcom_themes_url_grabber() {
+</span><span class='line'>    global $post;
+</span><span class='line'>    $first_url = '';
+</span><span class='line'>    ob_start();
+</span><span class='line'>    ob_end_clean();
+</span><span class='line'>    $output = preg_match_all( '/&lt;a.+href=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches );
+</span><span class='line'>    $first_url = $matches[1][0];
+</span><span class='line'>    if ( empty( $first_url ) )
+</span><span class='line'>        return false;
+</span><span class='line'>    return $first_url;
+</span><span class='line'>}
+</span><span class='line'> 
+</span><span class='line'>function wpcom_themes_audio_grabber() {
+</span><span class='line'>    global $wpdb, $post;
+</span><span class='line'>    $audio = '';
+</span><span class='line'>    $query = $wpdb->prepare( "SELECT guid FROM $wpdb->posts WHERE post_parent = %d AND post_type = 'attachment' AND post_mime_type = 'audio/mpeg' ORDER BY menu_order ASC LIMIT 1", $post->ID );
+</span><span class='line'>    $first_audio = $wpdb->get_results( $query );
+</span><span class='line'>    if ( $first_audio )
+</span><span class='line'>        return $first_audio[0]->guid;
+</span><span class='line'>    return false;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WordPress.com Theme Repository]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/16/wordpress-dot-com-theme-repository/"/>
+    <updated>2011-12-16T14:56:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/16/wordpress-dot-com-theme-repository</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/theme.png"></p>
+
+<p>Lately I’ve been searching for some WordPress themes that incorporate the post-formats feature. I soon realized that there are not too many places to find these themes, but one place stood out and the answer will surprise you.</p>
+
+<p><a href="http://wordpress.com">WordPress.com</a> (no, not wordpress.ORG).</p>
+
+<p>Why?</p>
+
+<p>The Automattic team has done a wonderful job of taking freely-available themes and improving upon them.</p>
+
+<p>One big problem did arise. I couldn’t find any way to download the WordPress.com versions of these great themes.</p>
+
+<p>After searching far and wide I finally stumbled upon this great gem, the WordPress.com theme SVN repository. This repository contains every free theme available for the WordPress.com users with all of the great custom functions. How do you get these great themes on your own self-hosted WordPress installation? Take a look at this:</p>
+
+<ol>
+<li>Open the SSH client of your choice (Terminal for Mac, PuTTY for Windows)</li>
+<li>SSH into your web server</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh &lt;username>@&lt;domain></span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Navigate to your WordPress theme directory</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd wp-content/themes/</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Type the following into your SSH client</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>svn co https://wpcom-themes.svn.automattic.com/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You now have over 150 quality themes at your disposal. Take a look!</p>
+
+<p><img src="http://channeleaton.github.com/assets/backlog/theme2.png"></p>
+
+<hr />
+
+<h2>Update</h2>
+
+<p>Getting errors with your post-formats? Here&#8217;s the <a href="http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/">solution</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[After the race]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/13/after-the-race/"/>
+    <updated>2011-12-13T15:06:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/13/after-the-race</id>
+    <content type="html"><![CDATA[<blockquote><p>Ouch!</p></blockquote>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Success!]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/12/success/"/>
+    <updated>2011-12-12T23:15:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/12/success</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/finish.jpg" title="At the Finish" alt="Crossing the finish line."></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New, beautiful icons from WebDesign Tuts+]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/11/new-icons/"/>
+    <updated>2011-12-11T23:48:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/11/new-icons</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/icons.png" title="Icons" ></p>
+
+<p>WebDesign Tuts+ has released a set of 50 icons to use in your own web designs. Get the files <a href="http://webdesign.tutsplus.com/freebies/icons-freebies/exclusive-freebie-50-crisp-web-app-icons/">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WordPress URL Template Tags]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/11/22/wordpress-url-template-tags/"/>
+    <updated>2011-11-22T23:21:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/11/22/wordpress-url-template-tags</id>
+    <content type="html"><![CDATA[<p>This post is mainly for my own reference. I find myself forgetting the basic URL template tags for WordPress.</p>
+
+<p>How do you use them? Here:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>site_url( $path, $scheme );</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So, if you wanted to output the url for my contact page, all you would need to do is this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>site_url(  '/contact-me/' );</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here’s a screenshot for the rest of the template tags taken from this page:</p>
+
+<p><img src="http://channeleaton.github.com/assets/backlog/tags.png"></p>
+]]></content>
+  </entry>
+  
+</feed>

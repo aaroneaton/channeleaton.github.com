@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: miscellaneous | My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/blog/categories/miscellaneous/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Oh great. I've gone full nerd]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/02/12/oh-great-ive-gone-full-nerd/"/>
+    <updated>2012-02-12T23:27:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/02/12/oh-great-ive-gone-full-nerd</id>
+    <content type="html"><![CDATA[<p><img src="/assets/backlog/terminal-nerd.png" title="Full Nerd" ></p>
+
+<p>You never go full nerd.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Beautiful Day at the Dog Park]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/01/12/beautiful-day-at-the-dog-park/"/>
+    <updated>2012-01-12T23:43:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/01/12/beautiful-day-at-the-dog-park</id>
+    <content type="html"><![CDATA[<div id="video-container">
+<iframe src="http://player.vimeo.com/video/35616659" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/35616659">Beautiful Day at the Dog Park</a> from <a href="http://vimeo.com/kelseywynns">Kelsey Wynns</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+</div>
+
+
+<ol>
+<li>Buy a pair of GoPro HD cameras</li>
+<li>Strap to dog</li>
+<li>????????</li>
+<li>Profit!</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google Doodle Swag]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/17/google-doodle-swag/"/>
+    <updated>2011-12-17T14:50:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/17/google-doodle-swag</id>
+    <content type="html"><![CDATA[<p>Google has now made available all (?) of their famous doodles printed on <a href="http://www.zazzle.com/googledoodles">many different items</a>.</p>
+
+<p>Go nuts.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[After the race]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/13/after-the-race/"/>
+    <updated>2011-12-13T15:06:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/13/after-the-race</id>
+    <content type="html"><![CDATA[<p><blockquote><p>Ouch!</p></blockquote></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New, beautiful icons from WebDesign Tuts+]]></title>
+    <link href="http://channeleaton.github.com/blog/2011/12/11/new-icons/"/>
+    <updated>2011-12-11T23:48:00-06:00</updated>
+    <id>http://channeleaton.github.com/blog/2011/12/11/new-icons</id>
+    <content type="html"><![CDATA[<p><img src="/assets/backlog/icons.png" title="Icons" ></p>
+
+<p>WebDesign Tuts+ has released a set of 50 icons to use in your own web designs. Get the files <a href="http://webdesign.tutsplus.com/freebies/icons-freebies/exclusive-freebie-50-crisp-web-app-icons/">here</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

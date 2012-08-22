@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: less | My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/blog/categories/less/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My renewed love for the ampersand]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/06/13/my-renewed-love-for-the-ampersand/"/>
+    <updated>2012-06-13T20:47:00-05:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/06/13/my-renewed-love-for-the-ampersand</id>
+    <content type="html"><![CDATA[<p>While retrofitting a Drupal theme here at work to use Less, we ran into some difficulty in applying same-level ids and classes when nesting rules. Here’s the original CSS. Both the primary-menu class and the index id are on the same element in the HTML:</p>
+
+<!-- more -->
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>primary-menu {&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  color: #fff;
+</span><span class='line'>  float: left;
+</span><span class='line'>  width: 736px;
+</span><span class='line'>  height: 30px;
+</span><span class='line'>  margin: 0;
+</span><span class='line'>  background: @gray;
+</span><span class='line'>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>primary-menu.index {&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  background: @gray url(../../images/headerBG.png) left bottom repeat-x;
+</span><span class='line'>  padding: 2px 0 13px 0;
+</span><span class='line'>  height: 26px;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>And here's our first attempt at nesting the <code>.index</code> rule:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>primary-menu {&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  color: #fff;
+</span><span class='line'>  float: left;
+</span><span class='line'>  width: 736px;
+</span><span class='line'>  height: 30px;
+</span><span class='line'>  margin: 0;
+</span><span class='line'>  background: @gray;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  .index {&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>background: @gray url(../../images/headerBG.png) left bottom repeat-x;
+</span><span class='line'>padding: 2px 0 13px 0;
+</span><span class='line'>height: 26px;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Everything's gravy, right?</p>
+
+<p>Wrong. Here's the processed CSS:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>primary-menu .index {&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  CSS Rules Here
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>See that space between the class and id? Yeah, that’s not going to work. At first I thought this was a limitation of nested rules in Less but then I remembered how pseudo-classes were applied to anchor tags:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>a {
+</span><span class='line'>  text-decoration: none;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  &amp;:hover {&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>text-decoration: underline;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>The ampersand (&amp;) in Less acts as a concatenation symbol, getting rid of any spaces between the parent and child selectors. Why not add that to our original issue?</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>primary-menu {&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  color:#fff;
+</span><span class='line'>  float:left;
+</span><span class='line'>  width:736px;
+</span><span class='line'>  height:30px;
+</span><span class='line'>  margin:0px 0 0 0;
+</span><span class='line'>  padding: 2px 0 0px 0px;
+</span><span class='line'>  background: @gray;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  &amp;.index {&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>background: @gray url(../../images/headerBG.png) left bottom repeat-x;
+</span><span class='line'>padding: 2px 0 13px 0px;
+</span><span class='line'>height: 26px;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>When processed, no space exists between the class and id and everyone is happy again.</p>
+
+<p>Go forth and don't make the same mistake I did.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | My Octopress Blog]]></title>
+  <link href="http://channeleaton.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://channeleaton.github.com/"/>
+  <updated>2012-08-21T20:23:18-05:00</updated>
+  <id>http://channeleaton.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[So long, WordPress!]]></title>
+    <link href="http://channeleaton.github.com/blog/2012/08/21/so-long/"/>
+    <updated>2012-08-21T17:58:00-05:00</updated>
+    <id>http://channeleaton.github.com/blog/2012/08/21/so-long</id>
+    <content type="html"><![CDATA[<p>Starting today, my blog will be powered by <a href="http://octopress.org">Octopress</a>.</p>
+
+<p>You may be wondering why a 'WordPress guy' wouldn't use WordPress as his blogging engine. I'll give you a couple of reasons.</p>
+
+<h3>I wanted something simple</h3>
+
+<p>WordPress has grown a great deal since its inception. So much so that I believe it has outgrown itself as <em>just</em> a blogging engine. I found myself tinkering with it a great deal (which has been useful at times) without actually writing.</p>
+
+<h3>WordPress requires a decent host</h3>
+
+<p>If you use WordPress on a shared host, you better be on the best. Even then you may be constantly fighting slow load times. Your best option is to run your own VPS or pony up for a specialty host such as <a href="http://wpengine.com">WPEngine</a>. I do not feel like paying $30-$60 per month to host a personal blog.</p>
+
+<h3>I love Markdown</h3>
+
+<p>John Gruber.</p>
+
+<p>This man changed the way the internet writes content when he released <a href="http://daringfireball.net/projects/markdown/">Markdown</a>. I wanted to write my blog in Markdown because it is dead simple. There's no GUI or html tags to get in the way of writing. Plugins are available to use Markdown in WordPress but all of them seemed a bit kludgey (sp?).</p>
+
+<h2>It's not goodbye</h2>
+
+<p>Now, none of this means that I am abandoning WordPress. I love writing plugins and themes. And I will continue to write about WordPress, especially now that I am a full-time WordPress developer. I still believe WordPress is <strong>the</strong> CMS to use and will be for a long time to come.</p>
+
+<p>My WordPress site will continue to live at <a href="http://wplabs.channeleaton.com">wplabs.channeleaton.com</a>, although it is currently having some difficulties. I think it's mad at me.</p>
+]]></content>
+  </entry>
+  
+</feed>
