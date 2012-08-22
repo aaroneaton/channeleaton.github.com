@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://channeleaton.github.com/atom.xml" rel="self"/>
-  <link href="http://channeleaton.github.com/"/>
-  <updated>2012-08-21T20:24:15-05:00</updated>
-  <id>http://channeleaton.github.com/</id>
+  <title><![CDATA[channeleaton]]></title>
+  <link href="http://channeleaton.com/atom.xml" rel="self"/>
+  <link href="http://channeleaton.com/"/>
+  <updated>2012-08-21T20:36:52-05:00</updated>
+  <id>http://channeleaton.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[J. Aaron Eaton]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[So long, WordPress!]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/08/21/so-long/"/>
+    <link href="http://channeleaton.com/blog/2012/08/21/so-long/"/>
     <updated>2012-08-21T17:58:00-05:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/08/21/so-long</id>
+    <id>http://channeleaton.com/blog/2012/08/21/so-long</id>
     <content type="html"><![CDATA[<p>Starting today, my blog will be powered by <a href="http://octopress.org">Octopress</a>.</p>
 
 <p>You may be wondering why a &#8216;WordPress guy&#8217; wouldn&#8217;t use WordPress as his blogging engine. I&#8217;ll give you a couple of reasons.</p>
@@ -46,9 +46,9 @@
   
   <entry>
     <title type="html"><![CDATA[My renewed love for the ampersand]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/06/13/my-renewed-love-for-the-ampersand/"/>
+    <link href="http://channeleaton.com/blog/2012/06/13/my-renewed-love-for-the-ampersand/"/>
     <updated>2012-06-13T20:47:00-05:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/06/13/my-renewed-love-for-the-ampersand</id>
+    <id>http://channeleaton.com/blog/2012/06/13/my-renewed-love-for-the-ampersand</id>
     <content type="html"><![CDATA[<p>While retrofitting a Drupal theme here at work to use Less, we ran into some difficulty in applying same-level ids and classes when nesting rules. Here’s the original CSS. Both the primary-menu class and the index id are on the same element in the HTML:</p>
 
 <!-- more -->
@@ -190,9 +190,9 @@
   
   <entry>
     <title type="html"><![CDATA[Plaza Hotel Implosion]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/05/24/plaza-hotel-implosion/"/>
+    <link href="http://channeleaton.com/blog/2012/05/24/plaza-hotel-implosion/"/>
     <updated>2012-05-24T21:35:00-05:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/05/24/plaza-hotel-implosion</id>
+    <id>http://channeleaton.com/blog/2012/05/24/plaza-hotel-implosion</id>
     <content type="html"><![CDATA[<p>Here&#8217;s two videos I made of this morning&#8217;s implosion:</p>
 
 <div class="video-container">
@@ -213,9 +213,9 @@
   
   <entry>
     <title type="html"><![CDATA[PHP in_array() only matches value in the first array position]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position/"/>
+    <link href="http://channeleaton.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position/"/>
     <updated>2012-02-29T21:39:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position</id>
+    <id>http://channeleaton.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position</id>
     <content type="html"><![CDATA[<p>While trying to create a tagging function for a new blog system I’m currently building, I kept running into trouble when using is_array() to find the tags for each post.</p>
 
 <p>Let’s say we have a tag array that was populated from a text file:</p>
@@ -264,10 +264,10 @@
   
   <entry>
     <title type="html"><![CDATA[Oh great. I've gone full nerd]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/02/12/oh-great-ive-gone-full-nerd/"/>
+    <link href="http://channeleaton.com/blog/2012/02/12/oh-great-ive-gone-full-nerd/"/>
     <updated>2012-02-12T23:27:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/02/12/oh-great-ive-gone-full-nerd</id>
-    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/terminal-nerd.png" title="Full Nerd" ></p>
+    <id>http://channeleaton.com/blog/2012/02/12/oh-great-ive-gone-full-nerd</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.com/assets/backlog/terminal-nerd.png" title="Full Nerd" ></p>
 
 <p>You never go full nerd.</p>
 ]]></content>
@@ -275,10 +275,10 @@
   
   <entry>
     <title type="html"><![CDATA[New WordPress Plugin - WP Slider.js]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/02/06/new-wordpress-plugin/"/>
+    <link href="http://channeleaton.com/blog/2012/02/06/new-wordpress-plugin/"/>
     <updated>2012-02-06T23:35:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/02/06/new-wordpress-plugin</id>
-    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/slider.png" title="WP Slider.js Screencap" ></p>
+    <id>http://channeleaton.com/blog/2012/02/06/new-wordpress-plugin</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.com/assets/backlog/slider.png" title="WP Slider.js Screencap" ></p>
 
 <p>I just wanted to let you know about a plugin I’m currently working on. Yeah. It’s yet another feature/image slider but this one is based on the new, beautiful <a href="http://sliderjs.org/">Slider.js</a> by <a href="http://gaetanrenaudeau.fr/">Gaetan Renaudeau</a>.</p>
 
@@ -288,9 +288,9 @@
   
   <entry>
     <title type="html"><![CDATA[Beautiful Day at the Dog Park]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/01/12/beautiful-day-at-the-dog-park/"/>
+    <link href="http://channeleaton.com/blog/2012/01/12/beautiful-day-at-the-dog-park/"/>
     <updated>2012-01-12T23:43:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/01/12/beautiful-day-at-the-dog-park</id>
+    <id>http://channeleaton.com/blog/2012/01/12/beautiful-day-at-the-dog-park</id>
     <content type="html"><![CDATA[<div id="video-container">
 <iframe src="http://player.vimeo.com/video/35616659" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/35616659">Beautiful Day at the Dog Park</a> from <a href="http://vimeo.com/kelseywynns">Kelsey Wynns</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 </div>
@@ -308,9 +308,9 @@
   
   <entry>
     <title type="html"><![CDATA[Enable Facebook comments on your WordPress blog]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog/"/>
+    <link href="http://channeleaton.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog/"/>
     <updated>2011-12-20T23:54:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog</id>
+    <id>http://channeleaton.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog</id>
     <content type="html"><![CDATA[<p>Wptuts+ has a great write-up on how to enable Facebook comments on your WordPress blog. I was pleasantly surprised to find how easy the process has become.</p>
 
 <p>I would make one improvement. Instead of hard-coding the <code>&lt;meta&gt;</code> tag to add your app id, I would insert the following into your <code>functions.php</code> file:</p>
@@ -337,10 +337,10 @@
   
   <entry>
     <title type="html"><![CDATA[Car-free Weekend]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/18/car-free-weekend/"/>
+    <link href="http://channeleaton.com/blog/2011/12/18/car-free-weekend/"/>
     <updated>2011-12-18T14:29:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/18/car-free-weekend</id>
-    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/bike-ride.jpg"></p>
+    <id>http://channeleaton.com/blog/2011/12/18/car-free-weekend</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.com/assets/backlog/bike-ride.jpg"></p>
 
 <p>I&#8217;m having a great time riding my bike around town this weekend.</p>
 ]]></content>
@@ -348,10 +348,10 @@
   
   <entry>
     <title type="html"><![CDATA[Best plugin to get RSS feeds into your WordPress loop]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop/"/>
+    <link href="http://channeleaton.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop/"/>
     <updated>2011-12-18T00:00:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop</id>
-    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/feedwordpress.png" title="FeedWordPress" ></p>
+    <id>http://channeleaton.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.com/assets/backlog/feedwordpress.png" title="FeedWordPress" ></p>
 
 <p>Have you ever wanted to aggregate news feeds into your WordPress blog ? The <a href="http://feedwordpress.radgeek.com/">FeedWordPress plugin</a> makes it extremely easy for you.</p>
 
@@ -363,9 +363,9 @@
   
   <entry>
     <title type="html"><![CDATA[Google Doodle Swag]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/17/google-doodle-swag/"/>
+    <link href="http://channeleaton.com/blog/2011/12/17/google-doodle-swag/"/>
     <updated>2011-12-17T14:50:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/17/google-doodle-swag</id>
+    <id>http://channeleaton.com/blog/2011/12/17/google-doodle-swag</id>
     <content type="html"><![CDATA[<p>Google has now made available all (?) of their famous doodles printed on <a href="http://www.zazzle.com/googledoodles">many different items</a>.</p>
 
 <p>Go nuts.</p>
@@ -374,10 +374,10 @@
   
   <entry>
     <title type="html"><![CDATA[Post-format fix for WordPress.com themes]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/"/>
+    <link href="http://channeleaton.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/"/>
     <updated>2011-12-17T14:42:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes</id>
-    <content type="html"><![CDATA[<p>In testing out some of the <a href="http://channeleaton.github.com/blog/2011/12/16/wordpress-dot-com-theme-repository/">WordPress.com themes</a>, I found that link and audio post formats would return a fatal error stating that certain functions did not exist. After a little searching and experimentation I have the solution for you. Just copy the following into the <code>functions.php</code> file:</p>
+    <id>http://channeleaton.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes</id>
+    <content type="html"><![CDATA[<p>In testing out some of the <a href="http://channeleaton.com/blog/2011/12/16/wordpress-dot-com-theme-repository/">WordPress.com themes</a>, I found that link and audio post formats would return a fatal error stating that certain functions did not exist. After a little searching and experimentation I have the solution for you. Just copy the following into the <code>functions.php</code> file:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -431,10 +431,10 @@
   
   <entry>
     <title type="html"><![CDATA[WordPress.com Theme Repository]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/16/wordpress-dot-com-theme-repository/"/>
+    <link href="http://channeleaton.com/blog/2011/12/16/wordpress-dot-com-theme-repository/"/>
     <updated>2011-12-16T14:56:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/16/wordpress-dot-com-theme-repository</id>
-    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/theme.png"></p>
+    <id>http://channeleaton.com/blog/2011/12/16/wordpress-dot-com-theme-repository</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.com/assets/backlog/theme.png"></p>
 
 <p>Lately I’ve been searching for some WordPress themes that incorporate the post-formats feature. I soon realized that there are not too many places to find these themes, but one place stood out and the answer will surprise you.</p>
 
@@ -478,21 +478,21 @@
 
 <p>You now have over 150 quality themes at your disposal. Take a look!</p>
 
-<p><img src="http://channeleaton.github.com/assets/backlog/theme2.png"></p>
+<p><img src="http://channeleaton.com/assets/backlog/theme2.png"></p>
 
 <hr />
 
 <h2>Update</h2>
 
-<p>Getting errors with your post-formats? Here&#8217;s the <a href="http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/">solution</a>.</p>
+<p>Getting errors with your post-formats? Here&#8217;s the <a href="http://channeleaton.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/">solution</a>.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[After the race]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/13/after-the-race/"/>
+    <link href="http://channeleaton.com/blog/2011/12/13/after-the-race/"/>
     <updated>2011-12-13T15:06:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/13/after-the-race</id>
+    <id>http://channeleaton.com/blog/2011/12/13/after-the-race</id>
     <content type="html"><![CDATA[<blockquote><p>Ouch!</p></blockquote>
 
 ]]></content>
@@ -500,19 +500,19 @@
   
   <entry>
     <title type="html"><![CDATA[Success!]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/12/success/"/>
+    <link href="http://channeleaton.com/blog/2011/12/12/success/"/>
     <updated>2011-12-12T23:15:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/12/success</id>
-    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/finish.jpg" title="At the Finish" alt="Crossing the finish line."></p>
+    <id>http://channeleaton.com/blog/2011/12/12/success</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.com/assets/backlog/finish.jpg" title="At the Finish" alt="Crossing the finish line."></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[New, beautiful icons from WebDesign Tuts+]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/11/new-icons/"/>
+    <link href="http://channeleaton.com/blog/2011/12/11/new-icons/"/>
     <updated>2011-12-11T23:48:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/11/new-icons</id>
-    <content type="html"><![CDATA[<p><img src="http://channeleaton.github.com/assets/backlog/icons.png" title="Icons" ></p>
+    <id>http://channeleaton.com/blog/2011/12/11/new-icons</id>
+    <content type="html"><![CDATA[<p><img src="http://channeleaton.com/assets/backlog/icons.png" title="Icons" ></p>
 
 <p>WebDesign Tuts+ has released a set of 50 icons to use in your own web designs. Get the files <a href="http://webdesign.tutsplus.com/freebies/icons-freebies/exclusive-freebie-50-crisp-web-app-icons/">here</a>.</p>
 ]]></content>
@@ -520,9 +520,9 @@
   
   <entry>
     <title type="html"><![CDATA[WordPress URL Template Tags]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/11/22/wordpress-url-template-tags/"/>
+    <link href="http://channeleaton.com/blog/2011/11/22/wordpress-url-template-tags/"/>
     <updated>2011-11-22T23:21:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/11/22/wordpress-url-template-tags</id>
+    <id>http://channeleaton.com/blog/2011/11/22/wordpress-url-template-tags</id>
     <content type="html"><![CDATA[<p>This post is mainly for my own reference. I find myself forgetting the basic URL template tags for WordPress.</p>
 
 <p>How do you use them? Here:</p>
@@ -539,7 +539,7 @@
 
 <p>Here’s a screenshot for the rest of the template tags taken from this page:</p>
 
-<p><img src="http://channeleaton.github.com/assets/backlog/tags.png"></p>
+<p><img src="http://channeleaton.com/assets/backlog/tags.png"></p>
 ]]></content>
   </entry>
   

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: wordpress | My Octopress Blog]]></title>
-  <link href="http://channeleaton.github.com/blog/categories/wordpress/atom.xml" rel="self"/>
-  <link href="http://channeleaton.github.com/"/>
-  <updated>2012-08-21T20:24:15-05:00</updated>
-  <id>http://channeleaton.github.com/</id>
+  <title><![CDATA[Category: wordpress | channeleaton]]></title>
+  <link href="http://channeleaton.com/blog/categories/wordpress/atom.xml" rel="self"/>
+  <link href="http://channeleaton.com/"/>
+  <updated>2012-08-21T20:36:52-05:00</updated>
+  <id>http://channeleaton.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[J. Aaron Eaton]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[So long, WordPress!]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/08/21/so-long/"/>
+    <link href="http://channeleaton.com/blog/2012/08/21/so-long/"/>
     <updated>2012-08-21T17:58:00-05:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/08/21/so-long</id>
+    <id>http://channeleaton.com/blog/2012/08/21/so-long</id>
     <content type="html"><![CDATA[<p>Starting today, my blog will be powered by <a href="http://octopress.org">Octopress</a>.</p>
 
 <p>You may be wondering why a 'WordPress guy' wouldn't use WordPress as his blogging engine. I'll give you a couple of reasons.</p>
@@ -46,9 +46,9 @@
   
   <entry>
     <title type="html"><![CDATA[New WordPress Plugin - WP Slider.js]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/02/06/new-wordpress-plugin/"/>
+    <link href="http://channeleaton.com/blog/2012/02/06/new-wordpress-plugin/"/>
     <updated>2012-02-06T23:35:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/02/06/new-wordpress-plugin</id>
+    <id>http://channeleaton.com/blog/2012/02/06/new-wordpress-plugin</id>
     <content type="html"><![CDATA[<p><img src="/assets/backlog/slider.png" title="WP Slider.js Screencap" ></p>
 
 <p>I just wanted to let you know about a plugin I’m currently working on. Yeah. It’s yet another feature/image slider but this one is based on the new, beautiful <a href="http://sliderjs.org/">Slider.js</a> by <a href="http://gaetanrenaudeau.fr/">Gaetan Renaudeau</a>.</p>
@@ -59,9 +59,9 @@
   
   <entry>
     <title type="html"><![CDATA[Enable Facebook comments on your WordPress blog]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog/"/>
+    <link href="http://channeleaton.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog/"/>
     <updated>2011-12-20T23:54:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog</id>
+    <id>http://channeleaton.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog</id>
     <content type="html"><![CDATA[<p>Wptuts+ has a great write-up on how to enable Facebook comments on your WordPress blog. I was pleasantly surprised to find how easy the process has become.</p>
 
 <p>I would make one improvement. Instead of hard-coding the <code>&lt;meta&gt;</code> tag to add your app id, I would insert the following into your <code>functions.php</code> file:</p>
@@ -85,9 +85,9 @@ function channeleaton_facebook_comments() {
   
   <entry>
     <title type="html"><![CDATA[Best plugin to get RSS feeds into your WordPress loop]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop/"/>
+    <link href="http://channeleaton.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop/"/>
     <updated>2011-12-18T00:00:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop</id>
+    <id>http://channeleaton.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop</id>
     <content type="html"><![CDATA[<p><img src="/assets/backlog/feedwordpress.png" title="FeedWordPress" ></p>
 
 <p>Have you ever wanted to aggregate news feeds into your WordPress blog ? The <a href="http://feedwordpress.radgeek.com/">FeedWordPress plugin</a> makes it extremely easy for you.</p>
@@ -100,9 +100,9 @@ function channeleaton_facebook_comments() {
   
   <entry>
     <title type="html"><![CDATA[Post-format fix for WordPress.com themes]]></title>
-    <link href="http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/"/>
+    <link href="http://channeleaton.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/"/>
     <updated>2011-12-17T14:42:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes</id>
+    <id>http://channeleaton.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes</id>
     <content type="html"><![CDATA[<p>In testing out some of the <a href="/blog/2011/12/16/wordpress-dot-com-theme-repository/">WordPress.com themes</a>, I found that link and audio post formats would return a fatal error stating that certain functions did not exist. After a little searching and experimentation I have the solution for you. Just copy the following into the <code>functions.php</code> file:</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

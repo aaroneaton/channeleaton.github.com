@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: less | My Octopress Blog]]></title>
-  <link href="http://channeleaton.github.com/blog/categories/less/atom.xml" rel="self"/>
-  <link href="http://channeleaton.github.com/"/>
-  <updated>2012-08-21T20:24:15-05:00</updated>
-  <id>http://channeleaton.github.com/</id>
+  <title><![CDATA[Category: less | channeleaton]]></title>
+  <link href="http://channeleaton.com/blog/categories/less/atom.xml" rel="self"/>
+  <link href="http://channeleaton.com/"/>
+  <updated>2012-08-21T20:36:52-05:00</updated>
+  <id>http://channeleaton.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[J. Aaron Eaton]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My renewed love for the ampersand]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/06/13/my-renewed-love-for-the-ampersand/"/>
+    <link href="http://channeleaton.com/blog/2012/06/13/my-renewed-love-for-the-ampersand/"/>
     <updated>2012-06-13T20:47:00-05:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/06/13/my-renewed-love-for-the-ampersand</id>
+    <id>http://channeleaton.com/blog/2012/06/13/my-renewed-love-for-the-ampersand</id>
     <content type="html"><![CDATA[<p>While retrofitting a Drupal theme here at work to use Less, we ran into some difficulty in applying same-level ids and classes when nesting rules. Here’s the original CSS. Both the primary-menu class and the index id are on the same element in the HTML:</p>
 
 <!-- more -->

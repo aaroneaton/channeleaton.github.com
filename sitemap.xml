@@ -1,91 +1,87 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://channeleaton.github.com/blog/2011/11/22/wordpress-url-template-tags/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2011/11/22/wordpress-url-template-tags/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://channeleaton.github.com/blog/2011/12/11/new-icons/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2011/12/11/new-icons/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://channeleaton.github.com/blog/2011/12/12/success/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2011/12/12/success/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://channeleaton.github.com/blog/2011/12/13/after-the-race/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2011/12/13/after-the-race/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://channeleaton.github.com/blog/2011/12/16/wordpress-dot-com-theme-repository/
-        </loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://channeleaton.github.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/
-        </loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://channeleaton.github.com/blog/2011/12/17/google-doodle-swag/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2011/12/16/wordpress-dot-com-theme-repository/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://channeleaton.github.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop/
+            http://channeleaton.com/blog/2011/12/17/post-format-fix-for-wordpress-dot-com-themes/
         </loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://channeleaton.github.com/blog/2011/12/18/car-free-weekend/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2011/12/17/google-doodle-swag/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://channeleaton.github.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog/
+            http://channeleaton.com/blog/2011/12/18/best-plugin-to-get-rss-feeds-into-your-wordpress-loop/
         </loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://channeleaton.github.com/blog/2012/01/12/beautiful-day-at-the-dog-park/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://channeleaton.github.com/blog/2012/02/06/new-wordpress-plugin/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://channeleaton.github.com/blog/2012/02/12/oh-great-ive-gone-full-nerd/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2011/12/18/car-free-weekend/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://channeleaton.github.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position/
+            http://channeleaton.com/blog/2011/12/20/enable-facebook-comments-on-your-wordpress-blog/
         </loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://channeleaton.github.com/blog/2012/05/24/plaza-hotel-implosion/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2012/01/12/beautiful-day-at-the-dog-park/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://channeleaton.com/blog/2012/02/06/new-wordpress-plugin/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://channeleaton.com/blog/2012/02/12/oh-great-ive-gone-full-nerd/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://channeleaton.github.com/blog/2012/06/13/my-renewed-love-for-the-ampersand/
+            http://channeleaton.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position/
         </loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://channeleaton.github.com/blog/2012/08/21/so-long/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2012/05/24/plaza-hotel-implosion/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://channeleaton.github.com/blog/archives/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2012/06/13/my-renewed-love-for-the-ampersand/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://channeleaton.github.com/</loc>
-        <lastmod>2012-08-21T20:20:46-05:00</lastmod>
+        <loc>http://channeleaton.com/blog/2012/08/21/so-long/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://channeleaton.com/blog/archives/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://channeleaton.com/</loc>
+        <lastmod>2012-08-21T20:36:38-05:00</lastmod>
     </url>
 </urlset>

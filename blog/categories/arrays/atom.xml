@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: arrays | My Octopress Blog]]></title>
-  <link href="http://channeleaton.github.com/blog/categories/arrays/atom.xml" rel="self"/>
-  <link href="http://channeleaton.github.com/"/>
-  <updated>2012-08-21T20:24:15-05:00</updated>
-  <id>http://channeleaton.github.com/</id>
+  <title><![CDATA[Category: arrays | channeleaton]]></title>
+  <link href="http://channeleaton.com/blog/categories/arrays/atom.xml" rel="self"/>
+  <link href="http://channeleaton.com/"/>
+  <updated>2012-08-21T20:36:52-05:00</updated>
+  <id>http://channeleaton.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[J. Aaron Eaton]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[PHP in_array() only matches value in the first array position]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position/"/>
+    <link href="http://channeleaton.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position/"/>
     <updated>2012-02-29T21:39:00-06:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position</id>
+    <id>http://channeleaton.com/blog/2012/02/29/php-in-array-only-matches-value-in-the-first-array-position</id>
     <content type="html"><![CDATA[<p>While trying to create a tagging function for a new blog system I’m currently building, I kept running into trouble when using is_array() to find the tags for each post.</p>
 
 <p>Let’s say we have a tag array that was populated from a text file:</p>

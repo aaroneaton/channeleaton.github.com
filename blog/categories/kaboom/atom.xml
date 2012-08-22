@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: kaboom | My Octopress Blog]]></title>
-  <link href="http://channeleaton.github.com/blog/categories/kaboom/atom.xml" rel="self"/>
-  <link href="http://channeleaton.github.com/"/>
-  <updated>2012-08-21T20:24:15-05:00</updated>
-  <id>http://channeleaton.github.com/</id>
+  <title><![CDATA[Category: kaboom | channeleaton]]></title>
+  <link href="http://channeleaton.com/blog/categories/kaboom/atom.xml" rel="self"/>
+  <link href="http://channeleaton.com/"/>
+  <updated>2012-08-21T20:36:52-05:00</updated>
+  <id>http://channeleaton.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[J. Aaron Eaton]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Plaza Hotel Implosion]]></title>
-    <link href="http://channeleaton.github.com/blog/2012/05/24/plaza-hotel-implosion/"/>
+    <link href="http://channeleaton.com/blog/2012/05/24/plaza-hotel-implosion/"/>
     <updated>2012-05-24T21:35:00-05:00</updated>
-    <id>http://channeleaton.github.com/blog/2012/05/24/plaza-hotel-implosion</id>
+    <id>http://channeleaton.com/blog/2012/05/24/plaza-hotel-implosion</id>
     <content type="html"><![CDATA[<p>Here's two videos I made of this morning's implosion:</p>
 
 <div class="video-container">
